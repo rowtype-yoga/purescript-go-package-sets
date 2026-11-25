@@ -209,7 +209,7 @@
     },
     "yoga-go-http-om": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-go-http-om.git",
-      "ref": "v0.1.1",
+      "ref": "v0.1.2",
       "dependencies": [
         "aff",
         "arrays",

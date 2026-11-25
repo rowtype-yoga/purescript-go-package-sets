@@ -18,7 +18,7 @@ package:
     - prelude
 workspace:
   packageSet:
-    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261125/packages.json
+    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261125.1/packages.json
 ```
 
 ```purescript
@@ -54,7 +54,7 @@ brew install spago i-am-the-slime/tap/iris
 | --- | --- |
 | Go's standard library, from [purescript-go](https://github.com/i-am-the-slime/purescript-go) `v0.2.0` | `go-io`, `go-os`, `go-exec`, `go-http`, `go-time`, `go-bytes` |
 | [yoga-protobuf](https://github.com/rowtype-yoga/purescript-yoga-protobuf) `v0.1.0` | `yoga-protobuf` |
-| [yoga-go-http-om](https://github.com/rowtype-yoga/purescript-yoga-go-http-om) `v0.1.1` | `yoga-go-http-om` |
+| [yoga-go-http-om](https://github.com/rowtype-yoga/purescript-yoga-go-http-om) `v0.1.2` | `yoga-go-http-om` |
 | [yoga-connect](https://github.com/rowtype-yoga/purescript-yoga-connect) `v0.1.1` | `yoga-connect`, `yoga-connect-go`, `yoga-strom-io` |
 | The registry, from its package set `80.8.1` | `prelude`, `effect`, `aff`, `avar`, `arrays`, `strings`, `ordered-collections`, `unordered-collections`, `foreign-object`, `refs`, `st`, `transformers`, `variant`, `record`, `datetime`, `now`, `int64`, `yoga-json`, `yoga-om`, `spec` and what they need: 79 packages |
 
@@ -64,11 +64,13 @@ gets a new tag.
 ## Tags
 
 `go-<Iris version>-<date>`, like purerl's `erl-<purs version>-<date>`. The Iris version is the
-oldest one the set was checked with, newer ones work too.
+oldest one the set was checked with, newer ones work too. A second set on the same day gets a
+`.1`, a third a `.2`.
 
-| Tag | Iris | Registry set |
-| --- | --- | --- |
-| `go-0.1.18-20261125` | 0.1.18-go.2 | 80.8.1 |
+| Tag | Iris | Registry set | What changed |
+| --- | --- | --- | --- |
+| `go-0.1.18-20261125.1` | 0.1.18-go.2 | 80.8.1 | yoga-go-http-om `v0.1.2`, which takes yoga-om 2.x |
+| `go-0.1.18-20261125` | 0.1.18-go.2 | 80.8.1 | the first set |
 
 Switching sets is changing the tag in the URL.
 
@@ -132,7 +134,7 @@ Every check passed.
 Give it a URL to check a set that's already published:
 
 ```bash
-gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261125/packages.json
+gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261125.1/packages.json
 ```
 
 `IRIS` picks another iris binary. CI runs the checks on every push and tag, with the released
