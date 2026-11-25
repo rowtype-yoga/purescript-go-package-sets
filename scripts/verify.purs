@@ -1,14 +1,14 @@
 -- | Checks that the package set works on Go. In a fresh project that uses nothing but the set:
 -- |
--- | - every registry package in it compiles (`iris build`),
+-- | - every registry package in it compiles (`googoo build`),
 -- | - every package in `verify/` compiles to Go, runs, and prints exactly its `expected.txt`,
 -- | - and each package that comes from git has such a check.
 -- |
 -- |   gogogo scripts/verify.purs [package set]
 -- |
 -- | Run it from the repository's root. The set is `packages.json` unless you name another file or
--- | a URL, such as a tag's raw URL. `IRIS` picks the iris binary (`iris` on the PATH by default).
--- | CI runs the same module with `iris run --go -p verify-runner`.
+-- | a URL, such as a tag's raw URL. `IRIS` picks the googoo binary (`googoo` on the PATH by
+-- | default). CI runs the same module with `googoo run --go -p verify-runner`.
 module Verify where
 
 import Prelude
@@ -97,7 +97,7 @@ packageSetAddress = do
 irisProgram :: Aff Program
 irisProgram = do
   chosen <- OS.lookupEnv (EnvName "IRIS") # liftEffect
-  pure (Program (maybe "iris" (un EnvValue) chosen))
+  pure (Program (maybe "googoo" (un EnvValue) chosen))
 
 -- | A set is meant for the released Iris and its Go runtime, not a local iris-go checkout.
 warnAboutALocalRuntime :: Aff Unit
@@ -157,7 +157,7 @@ everythingModule = String.joinWith "\n"
   , ""
   ]
 
--- | `iris build` of the package that depends on every registry package: they resolve together and
+-- | `googoo build` of the package that depends on every registry package: they resolve together and
 -- | each one compiles.
 registryPackagesCompile :: Program -> FilePath -> PackageSet -> Aff Outcome
 registryPackagesCompile iris workspace set = do

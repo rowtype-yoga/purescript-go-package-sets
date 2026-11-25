@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 env:
-  IRIS_VERSION: v0.1.18-go.2
+  GOOGOO_VERSION: v0.1.18-go.3
   SPAGO_VERSION: 1.0.3
 
 jobs:
@@ -30,15 +30,15 @@ jobs:
           bun add --global spago@${SPAGO_VERSION}
           echo "$HOME/.bun/bin" >> "$GITHUB_PATH"
 
-      - name: Install Iris
+      - name: Install googoo
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release download "$IRIS_VERSION" -R i-am-the-slime/iris-go-backend -p 'iris-x86_64-unknown-linux-gnu.tar.gz' -D "$RUNNER_TEMP"
-          tar -xzf "$RUNNER_TEMP/iris-x86_64-unknown-linux-gnu.tar.gz" -C "$RUNNER_TEMP"
-          echo "$RUNNER_TEMP/iris-x86_64-unknown-linux-gnu" >> "$GITHUB_PATH"
+          gh release download "$GOOGOO_VERSION" -R i-am-the-slime/iris-go-backend -p 'googoo-x86_64-unknown-linux-gnu.tar.gz' -D "$RUNNER_TEMP"
+          tar -xzf "$RUNNER_TEMP/googoo-x86_64-unknown-linux-gnu.tar.gz" -C "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/googoo-x86_64-unknown-linux-gnu" >> "$GITHUB_PATH"
 
       - name: Verify the package set
         run: |
-          iris --version
-          iris run --go -p verify-runner
+          googoo --version
+          googoo run --go -p verify-runner

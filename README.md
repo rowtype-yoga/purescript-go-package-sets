@@ -5,7 +5,8 @@ and HTTP libraries and the registry packages that work on Go are all there, at v
 together. No `extraPackages` lists.
 
 It's what [purerl's package sets](https://github.com/purerl/package-sets) are for Erlang, for
-[Iris](https://github.com/i-am-the-slime/iris-go-backend)'s Go backend.
+[googoo](https://github.com/i-am-the-slime/iris-go-backend), the PureScript compiler with a Go
+backend.
 
 ## Using it
 
@@ -18,7 +19,7 @@ package:
     - prelude
 workspace:
   packageSet:
-    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261125.1/packages.json
+    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126/packages.json
 ```
 
 ```purescript
@@ -36,17 +37,17 @@ main = launchIO_ do
 ```
 
 ```
-$ iris run --go
+$ googoo run --go
 hello from Go
 ```
 
-You need Iris 0.1.18-go.2 or newer, Go 1.27 and Spago 1.0:
+You need googoo 0.1.18-go.3 or newer, Go 1.27 and Spago 1.0:
 
 ```bash
-brew install spago i-am-the-slime/tap/iris
+brew install spago i-am-the-slime/tap/googoo
 ```
 
-`iris go` builds the binary without running it and prints where it put it.
+`googoo go` builds the binary without running it and prints where it put it.
 
 ## What's in it
 
@@ -63,12 +64,13 @@ gets a new tag.
 
 ## Tags
 
-`go-<Iris version>-<date>`, like purerl's `erl-<purs version>-<date>`. The Iris version is the
-oldest one the set was checked with, newer ones work too. A second set on the same day gets a
+`go-<googoo version>-<date>`, like purerl's `erl-<purs version>-<date>`. The googoo version is
+the oldest one the set was checked with, newer ones work too. A second set on the same day gets a
 `.1`, a third a `.2`.
 
-| Tag | Iris | Registry set | What changed |
+| Tag | googoo | Registry set | What changed |
 | --- | --- | --- | --- |
+| `go-0.1.18-20261126` | 0.1.18-go.3 | 80.8.1 | checked with googoo 0.1.18-go.3, the release that renamed `iris` to `googoo` |
 | `go-0.1.18-20261125.1` | 0.1.18-go.2 | 80.8.1 | yoga-go-http-om `v0.1.2`, which takes yoga-om 2.x |
 | `go-0.1.18-20261125` | 0.1.18-go.2 | 80.8.1 | the first set |
 
@@ -107,10 +109,10 @@ Open a pull request with:
    gogogo scripts/verify.purs
    ```
 
-   or with Iris alone:
+   or with googoo alone:
 
    ```bash
-   iris run --go -p verify-runner
+   googoo run --go -p verify-runner
    ```
 
 ## The checks
@@ -118,7 +120,7 @@ Open a pull request with:
 `scripts/verify.purs` makes a fresh project in a temporary folder that gets its packages from the
 set and nowhere else. In it:
 
-- every registry package compiles (`iris build` of a package that depends on all of them),
+- every registry package compiles (`googoo build` of a package that depends on all of them),
 - every package in `verify/` compiles to Go, runs, and prints exactly its `expected.txt`,
 - and every package that comes from git has such a check.
 
@@ -134,8 +136,8 @@ Every check passed.
 Give it a URL to check a set that's already published:
 
 ```bash
-gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261125.1/packages.json
+gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126/packages.json
 ```
 
-`IRIS` picks another iris binary. CI runs the checks on every push and tag, with the released
-Iris the tag is named after.
+`IRIS` picks another googoo binary. CI runs the checks on every push and tag, with the released
+googoo the tag is named after.
