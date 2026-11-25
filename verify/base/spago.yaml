@@ -1,0 +1,31 @@
+package:
+  name: verify-base
+  description: The registry part of the set, compiled to Go and run
+  dependencies:
+    - aff
+    - arrays
+    - avar
+    - console
+    - datetime
+    - effect
+    - foldable-traversable
+    - foreign-object
+    - int64
+    - integers
+    - lazy
+    - lists
+    - maybe
+    - numbers
+    - ordered-collections
+    - prelude
+    - record
+    - refs
+    - st
+    - strings
+    - transformers
+    - tuples
+    - unordered-collections
+    - variant
+    - yoga-json
+  run:
+    main: Verify.Base

@@ -1,0 +1,9 @@
+package:
+  name: verify-go-io
+  dependencies:
+    - effect
+    - foldable-traversable
+    - go-io
+    - prelude
+  run:
+    main: Verify.GoIO

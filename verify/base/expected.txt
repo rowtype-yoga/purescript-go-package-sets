@@ -1,0 +1,18 @@
+arrays: [12,14,16,18,20]
+strings: go, purescript
+integers: ff
+numbers: 2.0
+ordered-collections: (Just "two")
+unordered-collections: (Just 2009)
+foreign-object: ["purescript","go"]
+lists: (1 : 2 : 3 : Nil)
+st: 5050
+transformers: 6
+variant: count 3
+record: { backend: "Go", language: "PureScript" }
+lazy: 42
+int64: 2147483648
+datetime: (Seconds 90.0)
+yoga-json: (Just { langs: ["purs","go"], name: "Ada" })
+refs: 3
+aff and avar: handed over

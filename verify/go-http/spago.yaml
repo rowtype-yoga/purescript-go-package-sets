@@ -1,0 +1,13 @@
+package:
+  name: verify-go-http
+  dependencies:
+    - aff
+    - console
+    - effect
+    - either
+    - go-http
+    - maybe
+    - newtype
+    - prelude
+  run:
+    main: Verify.GoHTTP

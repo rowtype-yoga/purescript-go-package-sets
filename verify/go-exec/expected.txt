@@ -1,0 +1,2 @@
+echo said: "from a child\n", exit code 0
+not found: "no-such-program-verify"

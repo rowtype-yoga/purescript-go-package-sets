@@ -1,0 +1,3 @@
+200 {"name":"Alice","id":42}
+404 {"error":"no user 7"}
+400 {"error":"Invalid request","details":[{"field":"path","error":"Invalid path parameter 'id': Expected an integer but got: abc"}]}

@@ -1,0 +1,11 @@
+package:
+  name: verify-yoga-strom-io
+  dependencies:
+    - effect
+    - either
+    - go-io
+    - prelude
+    - yoga-go-http-om
+    - yoga-strom-io
+  run:
+    main: Verify.YogaStromIO

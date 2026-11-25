@@ -1,0 +1,10 @@
+package:
+  name: verify-go-time
+  dependencies:
+    - console
+    - effect
+    - either
+    - go-time
+    - prelude
+  run:
+    main: Verify.GoTime

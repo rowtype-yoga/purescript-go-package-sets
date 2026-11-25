@@ -1,0 +1,2 @@
+service: greeter.v1.Greeter
+NotFound is gRPC code 5, not_found

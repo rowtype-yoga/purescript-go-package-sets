@@ -1,0 +1,11 @@
+package:
+  name: verify-go-exec
+  dependencies:
+    - console
+    - effect
+    - either
+    - go-exec
+    - go-os
+    - prelude
+  run:
+    main: Verify.GoExec

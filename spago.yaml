@@ -1,0 +1,3 @@
+workspace:
+  packageSet:
+    path: packages.json

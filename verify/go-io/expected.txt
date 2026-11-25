@@ -1,0 +1,1 @@
+squared on four threads: [1,4,9,16]

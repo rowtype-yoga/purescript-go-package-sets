@@ -1,0 +1,9 @@
+package:
+  name: verify-go-bytes
+  dependencies:
+    - console
+    - effect
+    - go-bytes
+    - prelude
+  run:
+    main: Verify.GoBytes

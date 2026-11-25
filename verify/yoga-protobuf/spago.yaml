@@ -1,0 +1,11 @@
+package:
+  name: verify-yoga-protobuf
+  dependencies:
+    - console
+    - effect
+    - either
+    - functions
+    - prelude
+    - yoga-protobuf
+  run:
+    main: Verify.YogaProtobuf

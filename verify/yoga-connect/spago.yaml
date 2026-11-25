@@ -1,0 +1,10 @@
+package:
+  name: verify-yoga-connect
+  dependencies:
+    - console
+    - effect
+    - greeter-proto
+    - prelude
+    - yoga-connect
+  run:
+    main: Verify.YogaConnect

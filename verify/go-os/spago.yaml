@@ -1,0 +1,10 @@
+package:
+  name: verify-go-os
+  dependencies:
+    - console
+    - effect
+    - either
+    - go-os
+    - prelude
+  run:
+    main: Verify.GoOS

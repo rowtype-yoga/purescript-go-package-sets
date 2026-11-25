@@ -1,0 +1,7 @@
+unary: Hello, Ada!
+server stream: 1. hi Grace
+server stream: 2. hi Grace
+client stream: Hello, Ada and Grace!
+bidi stream: server said HI
+rejected: (ConnectError invalid_argument "say who you are")
+done

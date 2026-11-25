@@ -1,0 +1,19 @@
+package:
+  name: verify-yoga-connect-go
+  dependencies:
+    - effect
+    - either
+    - exceptions
+    - go-io
+    - go-os
+    - greeter-proto
+    - prelude
+    - strings
+    - transformers
+    - variant
+    - yoga-connect
+    - yoga-connect-go
+    - yoga-go-http-om
+    - yoga-strom-io
+  run:
+    main: Verify.YogaConnectGo

@@ -1,0 +1,15 @@
+package:
+  name: verify-yoga-go-http-om
+  dependencies:
+    - aff
+    - console
+    - effect
+    - either
+    - go-http
+    - go-io
+    - prelude
+    - yoga-go-http-om
+    - yoga-http-api
+    - yoga-om
+  run:
+    main: Verify.YogaGoHTTPOm

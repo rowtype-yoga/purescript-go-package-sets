@@ -1,0 +1,4 @@
+base and extension: "notes.txt" ".txt"
+environment: (Just "set")
+read back: (Right "written by Go")
+gone: true
