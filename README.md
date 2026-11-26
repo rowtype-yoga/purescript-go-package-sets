@@ -19,7 +19,7 @@ package:
     - prelude
 workspace:
   packageSet:
-    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.1/packages.json
+    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.2/packages.json
 ```
 
 ```purescript
@@ -41,7 +41,7 @@ $ googoo run --go
 hello from Go
 ```
 
-You need googoo 0.1.18-go.3 or newer, Go 1.27 and Spago 1.0:
+You need googoo 0.1.18-go.4 or newer, Go 1.27 and Spago 1.0:
 
 ```bash
 brew install spago i-am-the-slime/tap/googoo
@@ -71,6 +71,7 @@ the oldest one the set was checked with, newer ones work too. A second set on th
 
 | Tag | googoo | Registry set | What changed |
 | --- | --- | --- | --- |
+| `go-0.1.18-20261126.2` | 0.1.18-go.4 | 80.8.1 | checked with googoo 0.1.18-go.4, the same packages as before |
 | `go-0.1.18-20261126.1` | 0.1.18-go.3 | 80.8.1 | Bubble Tea, Bubbles, Huh and Lip Gloss for terminal UIs |
 | `go-0.1.18-20261126` | 0.1.18-go.3 | 80.8.1 | checked with googoo 0.1.18-go.3, the release that renamed `iris` to `googoo` |
 | `go-0.1.18-20261125.1` | 0.1.18-go.2 | 80.8.1 | yoga-go-http-om `v0.1.2`, which takes yoga-om 2.x |
@@ -138,7 +139,7 @@ Every check passed.
 Give it a URL to check a set that's already published:
 
 ```bash
-gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.1/packages.json
+gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.2/packages.json
 ```
 
 `IRIS` picks another googoo binary. CI runs the checks on every push and tag, with the released
