@@ -250,7 +250,7 @@
     "variant": "8.0.0",
     "yoga-connect": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-connect.git",
-      "ref": "v0.3.1",
+      "ref": "v0.3.2",
       "subdir": "packages/yoga-connect",
       "dependencies": [
         "arrays",
@@ -272,7 +272,7 @@
     },
     "yoga-connect-go": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-connect.git",
-      "ref": "v0.3.1",
+      "ref": "v0.3.2",
       "subdir": "packages/yoga-connect-go",
       "dependencies": [
         "arrays",
@@ -515,7 +515,7 @@
     },
     "yoga-strom-io": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-connect.git",
-      "ref": "v0.3.1",
+      "ref": "v0.3.2",
       "subdir": "packages/yoga-strom-io",
       "dependencies": [
         "arrays",
