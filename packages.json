@@ -250,18 +250,29 @@
     "variant": "8.0.0",
     "yoga-connect": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-connect.git",
-      "ref": "v0.2.0",
+      "ref": "v0.3.0",
       "subdir": "packages/yoga-connect",
       "dependencies": [
+        "arrays",
+        "effect",
+        "either",
+        "functions",
+        "int64",
         "maybe",
+        "newtype",
+        "ordered-collections",
+        "partial",
         "prelude",
+        "record",
+        "strings",
+        "tuples",
         "variant",
         "yoga-protobuf"
       ]
     },
     "yoga-connect-go": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-connect.git",
-      "ref": "v0.2.0",
+      "ref": "v0.3.0",
       "subdir": "packages/yoga-connect-go",
       "dependencies": [
         "arrays",
@@ -271,8 +282,10 @@
         "exceptions",
         "go-io",
         "maybe",
+        "newtype",
         "prelude",
         "record",
+        "strings",
         "transformers",
         "tuples",
         "type-equality",
@@ -502,7 +515,7 @@
     },
     "yoga-strom-io": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-connect.git",
-      "ref": "v0.2.0",
+      "ref": "v0.3.0",
       "subdir": "packages/yoga-strom-io",
       "dependencies": [
         "arrays",

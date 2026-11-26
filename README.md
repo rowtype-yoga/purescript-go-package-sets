@@ -19,7 +19,7 @@ package:
     - prelude
 workspace:
   packageSet:
-    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.5/packages.json
+    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.6/packages.json
 ```
 
 ```purescript
@@ -58,7 +58,7 @@ brew install spago i-am-the-slime/tap/googoo
 | [yoga-go-http-om](https://github.com/rowtype-yoga/purescript-yoga-go-http-om) `v0.2.0` | `yoga-go-http-om` |
 | [yoga-om-layer](https://github.com/rowtype-yoga/purescript-yoga-om-layer) `v2.2.0` | `yoga-om-layer` |
 | [yoga-postgres](https://github.com/rowtype-yoga/purescript-yoga-postgres) `v0.4.0`, [yoga-postgres-om](https://github.com/rowtype-yoga/purescript-yoga-postgres-om) `v0.2.0` and [yoga-sql-types](https://github.com/rowtype-yoga/purescript-yoga-sql-types) `v0.3.0`, Postgres on pgx | `yoga-postgres`, `yoga-postgres-io`, `yoga-postgres-om`, `yoga-postgres-omio`, `yoga-sql-types` |
-| [yoga-connect](https://github.com/rowtype-yoga/purescript-yoga-connect) `v0.2.0` | `yoga-connect`, `yoga-connect-go`, `yoga-strom-io` |
+| [yoga-connect](https://github.com/rowtype-yoga/purescript-yoga-connect) `v0.3.0` | `yoga-connect`, `yoga-connect-go`, `yoga-strom-io` |
 | [Bubble Tea](https://github.com/i-am-the-slime/purescript-bubbletea) `v0.3.0`, [Bubbles](https://github.com/i-am-the-slime/purescript-bubbles), [Huh](https://github.com/i-am-the-slime/purescript-huh), [Lip Gloss](https://github.com/i-am-the-slime/purescript-lipgloss), [Harmonica](https://github.com/i-am-the-slime/purescript-harmonica) and [Glamour](https://github.com/i-am-the-slime/purescript-glamour) `v0.2.0` | `bubbletea`, `bubbles`, `huh`, `lipgloss`, `harmonica`, `glamour` |
 | The registry, from its package set `80.8.1` | `prelude`, `effect`, `aff`, `avar`, `arrays`, `strings`, `ordered-collections`, `unordered-collections`, `foreign-object`, `refs`, `st`, `transformers`, `variant`, `record`, `datetime`, `now`, `int64`, `yoga-json`, `yoga-om`, `spec`, `uuid` and what they need: 79 packages |
 
@@ -73,6 +73,7 @@ the oldest one the set was checked with, newer ones work too. A second set on th
 
 | Tag | googoo | Registry set | What changed |
 | --- | --- | --- | --- |
+| `go-0.1.18-20261126.6` | 0.1.18-go.5 | 80.8.1 | yoga-connect `v0.3.0`: gRPC services as PureScript types, with their protocol buffer codecs and `.proto` worked out from them |
 | `go-0.1.18-20261126.5` | 0.1.18-go.5 | 80.8.1 | Postgres: yoga-postgres `v0.4.0` with yoga-postgres-io, yoga-postgres-om `v0.2.0` with yoga-postgres-omio, yoga-sql-types `v0.3.0`; uuid |
 | `go-0.1.18-20261126.4` | 0.1.18-go.5 | 80.8.1 | yoga-om-layer `v2.2.0`, which runs on Go |
 | `go-0.1.18-20261126.3` | 0.1.18-go.5 | 80.8.1 | `Int` is Go's `int` in every Go binding (purescript-go `v0.3.0`, Bubble Tea `v0.3.0`, the rest `v0.2.0`); Harmonica and Glamour |
@@ -148,7 +149,7 @@ Every check passed.
 Give it a URL to check a set that's already published:
 
 ```bash
-gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.5/packages.json
+gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.6/packages.json
 ```
 
 `IRIS` picks another googoo binary. CI runs the checks on every push and tag, with the released

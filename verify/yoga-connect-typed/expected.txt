@@ -1,0 +1,33 @@
+unary: 42
+server stream: [1,2,3]
+rejected: too much: 100
+done
+syntax = "proto3";
+
+package counter.v1;
+
+service Counter {
+  rpc Add(AddRequest) returns (AddResponse);
+  rpc CountTo(CountToRequest) returns (stream CountToResponse);
+}
+
+message AddRequest {
+  int32 amount = 1;
+}
+
+message AddResponse {
+  int32 amount = 1;
+}
+
+message TooMuch {
+  int32 value = 1;
+}
+
+message CountToRequest {
+  int32 amount = 1;
+}
+
+message CountToResponse {
+  int32 amount = 1;
+}
+

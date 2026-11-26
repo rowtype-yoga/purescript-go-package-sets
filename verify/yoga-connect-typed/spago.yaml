@@ -1,0 +1,13 @@
+package:
+  name: verify-yoga-connect-typed
+  dependencies:
+    - effect
+    - either
+    - go-io
+    - go-os
+    - prelude
+    - variant
+    - yoga-connect-go
+    - yoga-strom-io
+  run:
+    main: Verify.YogaConnectTyped
