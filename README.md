@@ -19,7 +19,7 @@ package:
     - prelude
 workspace:
   packageSet:
-    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.8/packages.json
+    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.9/packages.json
 ```
 
 ```purescript
@@ -53,7 +53,7 @@ brew install spago i-am-the-slime/tap/googoo
 
 | | Packages |
 | --- | --- |
-| Go's standard library, from [purescript-go](https://github.com/i-am-the-slime/purescript-go) `v0.3.0` | `go-io`, `go-os`, `go-exec`, `go-http`, `go-time`, `go-bytes` |
+| Go's standard library, from [purescript-go](https://github.com/i-am-the-slime/purescript-go) `v0.4.0` | `go-io`, `go-os`, `go-exec`, `go-http`, `go-time`, `go-bytes`, `go-spec` |
 | [yoga-protobuf](https://github.com/rowtype-yoga/purescript-yoga-protobuf) `v0.2.0` | `yoga-protobuf` |
 | [yoga-go-http-om](https://github.com/rowtype-yoga/purescript-yoga-go-http-om) `v0.2.0` | `yoga-go-http-om` |
 | [yoga-om-layer](https://github.com/rowtype-yoga/purescript-yoga-om-layer) `v2.2.0` | `yoga-om-layer` |
@@ -73,6 +73,7 @@ the oldest one the set was checked with, newer ones work too. A second set on th
 
 | Tag | googoo | Registry set | What changed |
 | --- | --- | --- | --- |
+| `go-0.1.18-20261126.9` | 0.1.18-go.6 | 80.8.1 | go-spec: `runSpecAndExitProcess` for specs on Go, from purescript-go `v0.4.0` |
 | `go-0.1.18-20261126.8` | 0.1.18-go.6 | 80.8.1 | yoga-connect `v0.3.2`: compiles with purs and runs on JavaScript, enums work there, and protoc reads the `.proto` of a method whose message has its name |
 | `go-0.1.18-20261126.7` | 0.1.18-go.6 | 80.8.1 | yoga-connect `v0.3.1`: a bidi call reaches the server before the client has sent anything |
 | `go-0.1.18-20261126.6` | 0.1.18-go.5 | 80.8.1 | yoga-connect `v0.3.0`: gRPC services as PureScript types, with their protocol buffer codecs and `.proto` worked out from them |
@@ -151,7 +152,7 @@ Every check passed.
 Give it a URL to check a set that's already published:
 
 ```bash
-gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.8/packages.json
+gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.9/packages.json
 ```
 
 `IRIS` picks another googoo binary. CI runs the checks on every push and tag, with the released

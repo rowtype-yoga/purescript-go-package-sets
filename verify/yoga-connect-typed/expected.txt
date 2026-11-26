@@ -7,8 +7,8 @@ syntax = "proto3";
 package counter.v1;
 
 service Counter {
-  rpc Add(AddRequest) returns (AddResponse);
-  rpc CountTo(CountToRequest) returns (stream CountToResponse);
+  rpc Add(counter.v1.AddRequest) returns (counter.v1.AddResponse);
+  rpc CountTo(counter.v1.CountToRequest) returns (stream counter.v1.CountToResponse);
 }
 
 message AddRequest {

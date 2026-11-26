@@ -1,0 +1,10 @@
+package:
+  name: verify-go-spec
+  dependencies:
+    - console
+    - effect
+    - go-spec
+    - prelude
+    - spec
+  run:
+    main: Verify.GoSpec
