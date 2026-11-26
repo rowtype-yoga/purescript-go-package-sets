@@ -1,0 +1,10 @@
+package:
+  name: verify-bubbletea
+  dependencies:
+    - bubbletea
+    - effect
+    - go-io
+    - prelude
+    - tuples
+  run:
+    main: Verify.Bubbletea

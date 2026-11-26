@@ -9,6 +9,41 @@
     "arrays": "7.3.0",
     "avar": "5.0.1",
     "bifunctors": "6.1.0",
+    "bubbles": {
+      "git": "https://github.com/i-am-the-slime/purescript-bubbles.git",
+      "ref": "v0.1.0",
+      "dependencies": [
+        "arrays",
+        "bubbletea",
+        "datetime",
+        "lipgloss",
+        "maybe",
+        "newtype",
+        "prelude",
+        "tuples"
+      ]
+    },
+    "bubbletea": {
+      "git": "https://github.com/i-am-the-slime/purescript-bubbletea.git",
+      "ref": "v0.2.0",
+      "dependencies": [
+        "arrays",
+        "datetime",
+        "effect",
+        "either",
+        "exceptions",
+        "foldable-traversable",
+        "go-io",
+        "integers",
+        "lipgloss",
+        "maybe",
+        "newtype",
+        "prelude",
+        "strings",
+        "transformers",
+        "tuples"
+      ]
+    },
     "catenable-lists": "7.0.0",
     "console": "6.1.0",
     "const": "6.0.0",
@@ -127,6 +162,20 @@
       ]
     },
     "heterogeneous": "0.7.0",
+    "huh": {
+      "git": "https://github.com/i-am-the-slime/purescript-huh.git",
+      "ref": "v0.1.0",
+      "dependencies": [
+        "arrays",
+        "bubbletea",
+        "effect",
+        "exceptions",
+        "go-io",
+        "maybe",
+        "prelude",
+        "tuples"
+      ]
+    },
     "identity": "6.0.0",
     "int64": "3.0.0",
     "integers": "6.0.0",
@@ -136,6 +185,17 @@
     "js-promise": "1.0.0",
     "js-promise-aff": "1.0.0",
     "lazy": "6.0.0",
+    "lipgloss": {
+      "git": "https://github.com/i-am-the-slime/purescript-lipgloss.git",
+      "ref": "v0.1.0",
+      "dependencies": [
+        "arrays",
+        "foldable-traversable",
+        "newtype",
+        "prelude",
+        "strings"
+      ]
+    },
     "lists": "7.0.0",
     "literals": "1.0.2",
     "maybe": "6.0.0",

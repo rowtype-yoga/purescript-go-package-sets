@@ -19,7 +19,7 @@ package:
     - prelude
 workspace:
   packageSet:
-    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126/packages.json
+    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.1/packages.json
 ```
 
 ```purescript
@@ -57,6 +57,7 @@ brew install spago i-am-the-slime/tap/googoo
 | [yoga-protobuf](https://github.com/rowtype-yoga/purescript-yoga-protobuf) `v0.1.0` | `yoga-protobuf` |
 | [yoga-go-http-om](https://github.com/rowtype-yoga/purescript-yoga-go-http-om) `v0.1.2` | `yoga-go-http-om` |
 | [yoga-connect](https://github.com/rowtype-yoga/purescript-yoga-connect) `v0.1.1` | `yoga-connect`, `yoga-connect-go`, `yoga-strom-io` |
+| [Bubble Tea](https://github.com/i-am-the-slime/purescript-bubbletea) `v0.2.0`, [Bubbles](https://github.com/i-am-the-slime/purescript-bubbles), [Huh](https://github.com/i-am-the-slime/purescript-huh) and [Lip Gloss](https://github.com/i-am-the-slime/purescript-lipgloss) `v0.1.0` | `bubbletea`, `bubbles`, `huh`, `lipgloss` |
 | The registry, from its package set `80.8.1` | `prelude`, `effect`, `aff`, `avar`, `arrays`, `strings`, `ordered-collections`, `unordered-collections`, `foreign-object`, `refs`, `st`, `transformers`, `variant`, `record`, `datetime`, `now`, `int64`, `yoga-json`, `yoga-om`, `spec` and what they need: 79 packages |
 
 `packages.json` has the full list with versions. A set never changes once it's tagged, a new one
@@ -70,6 +71,7 @@ the oldest one the set was checked with, newer ones work too. A second set on th
 
 | Tag | googoo | Registry set | What changed |
 | --- | --- | --- | --- |
+| `go-0.1.18-20261126.1` | 0.1.18-go.3 | 80.8.1 | Bubble Tea, Bubbles, Huh and Lip Gloss for terminal UIs |
 | `go-0.1.18-20261126` | 0.1.18-go.3 | 80.8.1 | checked with googoo 0.1.18-go.3, the release that renamed `iris` to `googoo` |
 | `go-0.1.18-20261125.1` | 0.1.18-go.2 | 80.8.1 | yoga-go-http-om `v0.1.2`, which takes yoga-om 2.x |
 | `go-0.1.18-20261125` | 0.1.18-go.2 | 80.8.1 | the first set |
@@ -136,7 +138,7 @@ Every check passed.
 Give it a URL to check a set that's already published:
 
 ```bash
-gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126/packages.json
+gogogo scripts/verify.purs https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.1/packages.json
 ```
 
 `IRIS` picks another googoo binary. CI runs the checks on every push and tag, with the released

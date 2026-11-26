@@ -1,0 +1,9 @@
+package:
+  name: verify-lipgloss
+  dependencies:
+    - effect
+    - go-io
+    - lipgloss
+    - prelude
+  run:
+    main: Verify.Lipgloss

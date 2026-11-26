@@ -1,0 +1,11 @@
+package:
+  name: verify-huh
+  dependencies:
+    - bubbletea
+    - effect
+    - go-io
+    - huh
+    - prelude
+    - tuples
+  run:
+    main: Verify.Huh

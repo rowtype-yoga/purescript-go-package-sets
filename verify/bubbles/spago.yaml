@@ -1,0 +1,11 @@
+package:
+  name: verify-bubbles
+  dependencies:
+    - bubbles
+    - bubbletea
+    - effect
+    - go-io
+    - prelude
+    - tuples
+  run:
+    main: Verify.Bubbles
