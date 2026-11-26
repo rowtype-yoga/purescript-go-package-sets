@@ -1,0 +1,5 @@
+CREATE TABLE fruit (name TEXT NOT NULL PRIMARY KEY, stock INTEGER NOT NULL)
+SELECT name, stock FROM fruit WHERE stock < $1
+{ database: "shop", host: "127.0.0.1", port: 1 }
+ping: false
+query failed: true

@@ -1,0 +1,10 @@
+package:
+  name: verify-yoga-sql-types
+  dependencies:
+    - console
+    - effect
+    - prelude
+    - yoga-json
+    - yoga-sql-types
+  run:
+    main: Verify.YogaSqlTypes

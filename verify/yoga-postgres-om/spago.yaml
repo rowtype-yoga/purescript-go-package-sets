@@ -1,0 +1,13 @@
+package:
+  name: verify-yoga-postgres-om
+  dependencies:
+    - aff
+    - console
+    - effect
+    - either
+    - prelude
+    - yoga-om
+    - yoga-postgres
+    - yoga-postgres-om
+  run:
+    main: Verify.YogaPostgresOm

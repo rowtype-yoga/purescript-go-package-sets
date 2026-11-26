@@ -1,0 +1,2 @@
+ping: false
+query failed: true

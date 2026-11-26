@@ -1,0 +1,12 @@
+package:
+  name: verify-yoga-postgres-io
+  dependencies:
+    - either
+    - effect
+    - go-io
+    - prelude
+    - yoga-postgres
+    - yoga-postgres-io
+    - yoga-sql-types
+  run:
+    main: Verify.YogaPostgresIO

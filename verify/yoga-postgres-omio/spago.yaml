@@ -1,0 +1,15 @@
+package:
+  name: verify-yoga-postgres-omio
+  dependencies:
+    - effect
+    - either
+    - go-io
+    - prelude
+    - variant
+    - yoga-go-http-om
+    - yoga-postgres
+    - yoga-postgres-io
+    - yoga-postgres-omio
+    - yoga-sql-types
+  run:
+    main: Verify.YogaPostgresOmIO
