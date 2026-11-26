@@ -1,0 +1,3 @@
+connecting to postgres://localhost/shop
+["a row for select * from orders"]
+disconnected

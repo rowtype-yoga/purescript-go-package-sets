@@ -1,0 +1,10 @@
+package:
+  name: verify-yoga-om-layer
+  dependencies:
+    - aff
+    - effect
+    - prelude
+    - yoga-om
+    - yoga-om-layer
+  run:
+    main: Verify.YogaOmLayer
