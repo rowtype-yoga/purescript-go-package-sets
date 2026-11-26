@@ -11,7 +11,7 @@
     "bifunctors": "6.1.0",
     "bubbles": {
       "git": "https://github.com/i-am-the-slime/purescript-bubbles.git",
-      "ref": "v0.1.0",
+      "ref": "v0.2.0",
       "dependencies": [
         "arrays",
         "bubbletea",
@@ -25,7 +25,7 @@
     },
     "bubbletea": {
       "git": "https://github.com/i-am-the-slime/purescript-bubbletea.git",
-      "ref": "v0.2.0",
+      "ref": "v0.3.0",
       "dependencies": [
         "arrays",
         "datetime",
@@ -64,9 +64,17 @@
     "functions": "6.0.0",
     "functors": "5.0.0",
     "gen": "4.0.0",
+    "glamour": {
+      "git": "https://github.com/i-am-the-slime/purescript-glamour.git",
+      "ref": "v0.2.0",
+      "dependencies": [
+        "either",
+        "prelude"
+      ]
+    },
     "go-bytes": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.2.0",
+      "ref": "v0.3.0",
       "subdir": "packages/go-bytes",
       "dependencies": [
         "newtype",
@@ -75,7 +83,7 @@
     },
     "go-exec": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.2.0",
+      "ref": "v0.3.0",
       "subdir": "packages/go-exec",
       "dependencies": [
         "aff",
@@ -92,7 +100,7 @@
     },
     "go-http": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.2.0",
+      "ref": "v0.3.0",
       "subdir": "packages/go-http",
       "dependencies": [
         "aff",
@@ -107,7 +115,7 @@
     },
     "go-io": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.2.0",
+      "ref": "v0.3.0",
       "subdir": "packages/go-io",
       "dependencies": [
         "aff",
@@ -130,7 +138,7 @@
     },
     "go-os": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.2.0",
+      "ref": "v0.3.0",
       "subdir": "packages/go-os",
       "dependencies": [
         "aff",
@@ -148,7 +156,7 @@
     },
     "go-time": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.2.0",
+      "ref": "v0.3.0",
       "subdir": "packages/go-time",
       "dependencies": [
         "datetime",
@@ -161,10 +169,17 @@
         "prelude"
       ]
     },
+    "harmonica": {
+      "git": "https://github.com/i-am-the-slime/purescript-harmonica.git",
+      "ref": "v0.2.0",
+      "dependencies": [
+        "prelude"
+      ]
+    },
     "heterogeneous": "0.7.0",
     "huh": {
       "git": "https://github.com/i-am-the-slime/purescript-huh.git",
-      "ref": "v0.1.0",
+      "ref": "v0.2.0",
       "dependencies": [
         "arrays",
         "bubbletea",
@@ -187,7 +202,7 @@
     "lazy": "6.0.0",
     "lipgloss": {
       "git": "https://github.com/i-am-the-slime/purescript-lipgloss.git",
-      "ref": "v0.1.0",
+      "ref": "v0.2.0",
       "dependencies": [
         "arrays",
         "foldable-traversable",
@@ -234,7 +249,7 @@
     "variant": "8.0.0",
     "yoga-connect": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-connect.git",
-      "ref": "v0.1.1",
+      "ref": "v0.2.0",
       "subdir": "packages/yoga-connect",
       "dependencies": [
         "maybe",
@@ -245,7 +260,7 @@
     },
     "yoga-connect-go": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-connect.git",
-      "ref": "v0.1.1",
+      "ref": "v0.2.0",
       "subdir": "packages/yoga-connect-go",
       "dependencies": [
         "arrays",
@@ -269,7 +284,7 @@
     },
     "yoga-go-http-om": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-go-http-om.git",
-      "ref": "v0.1.2",
+      "ref": "v0.2.0",
       "dependencies": [
         "aff",
         "arrays",
@@ -305,7 +320,7 @@
     "yoga-options": "0.1.1",
     "yoga-protobuf": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-protobuf.git",
-      "ref": "v0.1.0",
+      "ref": "v0.2.0",
       "dependencies": [
         "arrays",
         "effect",
@@ -323,7 +338,7 @@
     },
     "yoga-strom-io": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-connect.git",
-      "ref": "v0.1.1",
+      "ref": "v0.2.0",
       "subdir": "packages/yoga-strom-io",
       "dependencies": [
         "arrays",

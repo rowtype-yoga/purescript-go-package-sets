@@ -1,0 +1,12 @@
+package:
+  name: verify-glamour
+  dependencies:
+    - arrays
+    - effect
+    - either
+    - go-io
+    - glamour
+    - prelude
+    - strings
+  run:
+    main: Verify.Glamour

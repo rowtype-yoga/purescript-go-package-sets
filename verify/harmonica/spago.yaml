@@ -1,0 +1,10 @@
+package:
+  name: verify-harmonica
+  dependencies:
+    - effect
+    - go-io
+    - harmonica
+    - integers
+    - prelude
+  run:
+    main: Verify.Harmonica
