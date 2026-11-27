@@ -1,0 +1,11 @@
+package:
+  name: verify-go-map
+  dependencies:
+    - console
+    - effect
+    - foldable-traversable
+    - go-map
+    - maybe
+    - prelude
+  run:
+    main: Verify.GoMap

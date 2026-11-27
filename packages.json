@@ -74,7 +74,7 @@
     },
     "go-bytes": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.4.0",
+      "ref": "v0.5.0",
       "subdir": "packages/go-bytes",
       "dependencies": [
         "newtype",
@@ -83,7 +83,7 @@
     },
     "go-exec": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.4.0",
+      "ref": "v0.5.0",
       "subdir": "packages/go-exec",
       "dependencies": [
         "aff",
@@ -100,7 +100,7 @@
     },
     "go-http": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.4.0",
+      "ref": "v0.5.0",
       "subdir": "packages/go-http",
       "dependencies": [
         "aff",
@@ -115,7 +115,7 @@
     },
     "go-io": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.4.0",
+      "ref": "v0.5.0",
       "subdir": "packages/go-io",
       "dependencies": [
         "aff",
@@ -138,7 +138,7 @@
     },
     "go-os": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.4.0",
+      "ref": "v0.5.0",
       "subdir": "packages/go-os",
       "dependencies": [
         "aff",
@@ -156,7 +156,7 @@
     },
     "go-spec": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.4.0",
+      "ref": "v0.5.0",
       "subdir": "packages/go-spec",
       "dependencies": [
         "aff",
@@ -170,9 +170,20 @@
         "spec"
       ]
     },
+    "go-map": {
+      "git": "https://github.com/i-am-the-slime/purescript-go.git",
+      "ref": "v0.5.0",
+      "subdir": "packages/go-map",
+      "dependencies": [
+        "effect",
+        "maybe",
+        "prelude",
+        "tuples"
+      ]
+    },
     "go-time": {
       "git": "https://github.com/i-am-the-slime/purescript-go.git",
-      "ref": "v0.4.0",
+      "ref": "v0.5.0",
       "subdir": "packages/go-time",
       "dependencies": [
         "datetime",
@@ -314,7 +325,7 @@
     },
     "yoga-go-http-om": {
       "git": "https://github.com/rowtype-yoga/purescript-yoga-go-http-om.git",
-      "ref": "v0.2.0",
+      "ref": "v0.2.1",
       "dependencies": [
         "aff",
         "arrays",
