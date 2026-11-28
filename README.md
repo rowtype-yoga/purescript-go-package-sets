@@ -19,7 +19,7 @@ package:
     - prelude
 workspace:
   packageSet:
-    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261126.9/packages.json
+    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261127/packages.json
 ```
 
 ```purescript
@@ -41,21 +41,79 @@ $ googoo run
 hello from Go
 ```
 
-You need googoo 0.1.18-go.5 or newer, Go 1.27 and Spago 1.0:
+You need googoo 0.1.18-go.7 or newer, Go 1.27 and Spago 1.0:
 
 ```bash
 brew install spago i-am-the-slime/tap/googoo
 ```
 
-`googoo go` builds the binary without running it and prints where it put it.
+`googoo go` builds the binary without running it and prints where it put it. `googoo add go-map`
+adds a package from the set to your `spago.yaml`.
+
+### Starting from `googoo new`
+
+`googoo new` writes a `spago.yaml` on the registry's set. Swap its `packageSet` for the URL above,
+and swap its test dependency too: `assert` isn't in this set, and Spago stops at the first
+package that's missing, `googoo add` included.
+
+### Tests
+
+Specs run with go-spec's runner, as an ordinary program:
+
+```yaml
+package:
+  name: hello
+  dependencies:
+    - effect
+    - go-io
+    - prelude
+  test:
+    main: Test.Main
+    dependencies:
+      - go-spec
+      - spec
+workspace:
+  packageSet:
+    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261127/packages.json
+```
+
+```purescript
+module Test.Main where
+
+import Prelude
+
+import Effect (Effect)
+import Test.Spec (describe, it)
+import Test.Spec.Assertions (shouldEqual)
+import Test.Spec.Reporter.Console (consoleReporter)
+import Test.Spec.Runner.Go (runSpecAndExitProcess)
+
+main :: Effect Unit
+main = runSpecAndExitProcess [ consoleReporter ] do
+  describe "addition" do
+    it "adds" do
+      (1 + 1) `shouldEqual` 2
+```
+
+```
+$ googoo run --main Test.Main
+addition
+  ✓︎ adds
+
+Summary
+1/1 test passed
+```
+
+It exits with 1 when a spec fails. `googoo test` runs tests with Node.js, which the Go-only
+packages here don't support.
 
 ## What's in it
 
 | | Packages |
 | --- | --- |
-| Go's standard library, from [purescript-go](https://github.com/i-am-the-slime/purescript-go) `v0.4.0` | `go-io`, `go-os`, `go-exec`, `go-http`, `go-time`, `go-bytes`, `go-spec` |
+| Go's standard library, from [purescript-go](https://github.com/i-am-the-slime/purescript-go) `v0.5.0` | `go-io`, `go-os`, `go-exec`, `go-http`, `go-time`, `go-bytes`, `go-map`, `go-spec` |
 | [yoga-protobuf](https://github.com/rowtype-yoga/purescript-yoga-protobuf) `v0.2.0` | `yoga-protobuf` |
-| [yoga-go-http-om](https://github.com/rowtype-yoga/purescript-yoga-go-http-om) `v0.2.0` | `yoga-go-http-om` |
+| [yoga-go-http-om](https://github.com/rowtype-yoga/purescript-yoga-go-http-om) `v0.2.1` | `yoga-go-http-om` |
 | [yoga-om-layer](https://github.com/rowtype-yoga/purescript-yoga-om-layer) `v2.2.0` | `yoga-om-layer` |
 | [yoga-postgres](https://github.com/rowtype-yoga/purescript-yoga-postgres) `v0.4.0`, [yoga-postgres-om](https://github.com/rowtype-yoga/purescript-yoga-postgres-om) `v0.2.0` and [yoga-sql-types](https://github.com/rowtype-yoga/purescript-yoga-sql-types) `v0.3.0`, Postgres on pgx | `yoga-postgres`, `yoga-postgres-io`, `yoga-postgres-om`, `yoga-postgres-omio`, `yoga-sql-types` |
 | [yoga-connect](https://github.com/rowtype-yoga/purescript-yoga-connect) `v0.3.2` | `yoga-connect`, `yoga-connect-go`, `yoga-strom-io` |
