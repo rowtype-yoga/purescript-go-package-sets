@@ -19,7 +19,7 @@ package:
     - prelude
 workspace:
   packageSet:
-    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261127/packages.json
+    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261128/packages.json
 ```
 
 ```purescript
@@ -74,7 +74,7 @@ package:
       - spec
 workspace:
   packageSet:
-    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261127/packages.json
+    url: https://raw.githubusercontent.com/rowtype-yoga/purescript-go-package-sets/go-0.1.18-20261128/packages.json
 ```
 
 ```purescript
@@ -131,6 +131,7 @@ the oldest one the set was checked with, newer ones work too. A second set on th
 
 | Tag | googoo | Registry set | What changed |
 | --- | --- | --- | --- |
+| `go-0.1.18-20261128` | 0.1.18-go.12 | 80.8.1 | checked with googoo 0.1.18-go.12, the same packages as before |
 | `go-0.1.18-20261127` | 0.1.18-go.7 | 80.8.1 | checked with googoo 0.1.18-go.7, the same packages as before |
 | `go-0.1.18-20261126.10` | 0.1.18-go.6 | 80.8.1 | go-map: Go's built-in map in Effect like a Ref, from purescript-go `v0.5.0`; yoga-go-http-om `v0.2.1` |
 | `go-0.1.18-20261126.9` | 0.1.18-go.6 | 80.8.1 | go-spec: `runSpecAndExitProcess` for specs on Go, from purescript-go `v0.4.0` |

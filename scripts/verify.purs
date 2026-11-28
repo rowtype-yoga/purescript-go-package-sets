@@ -162,7 +162,7 @@ everythingModule = String.joinWith "\n"
 registryPackagesCompile :: Program -> FilePath -> PackageSet -> Aff Outcome
 registryPackagesCompile iris workspace set = do
   log ("Compiling the " <> show (Array.length set.fromRegistry) <> " registry packages") # liftEffect
-  built <- runIn workspace iris [ "build", "--quiet", "-p", "verify-everything" ]
+  built <- runIn workspace iris [ "build", "--js", "--quiet", "-p", "verify-everything" ]
   pure { label: "registry packages compile", failure: either Just (const Nothing) built }
 
 -- | Compiles the check's package to Go, runs it and compares what it prints.
