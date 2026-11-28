@@ -37,7 +37,7 @@ main = launchIO_ do
 ```
 
 ```
-$ googoo run --go
+$ googoo run
 hello from Go
 ```
 
@@ -126,7 +126,7 @@ Open a pull request with:
    or with googoo alone:
 
    ```bash
-   googoo run --go -p verify-runner
+   googoo run -p verify-runner
    ```
 
 ## The checks

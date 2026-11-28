@@ -8,7 +8,7 @@
 -- |
 -- | Run it from the repository's root. The set is `packages.json` unless you name another file or
 -- | a URL, such as a tag's raw URL. `IRIS` picks the googoo binary (`googoo` on the PATH by
--- | default). CI runs the same module with `googoo run --go -p verify-runner`.
+-- | default). CI runs the same module with `googoo run -p verify-runner`.
 module Verify where
 
 import Prelude

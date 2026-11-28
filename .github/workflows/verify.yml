@@ -41,4 +41,4 @@ jobs:
       - name: Verify the package set
         run: |
           googoo --version
-          googoo run --go -p verify-runner
+          googoo run -p verify-runner
